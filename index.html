@@ -1,0 +1,76 @@
+ 
+<html>
+  <head>
+    <title>Emotion To Emoji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <center>
+    <h2 class="text-capitalize btn btn-success inbox">hand gestures</h2>
+    <br>
+          
+    <h3 class="text-capitalize btn btn-success inbox">This app will say that whelther your hand is </h3>
+    <br>
+    <span class="ibox btn btn-warning">&#128076;</span><span class="ibox btn btn-warning">or</span><span class="ibox btn btn-warning">&#128077;</span><span class="ibox btn btn-warning">or</span><span class="ibox btn btn-warning">&#9996;</span><br><br>
+    <div class="col-md-4 col-sm-12 col-xs-12">
+      <label>Prediction 1</label>
+      <p class="emotion_name" id="result_emotion_name"></p>
+      <p class="emoji" id="update_emoji"></p>
+
+      <label>Prediction 2</label>
+      <p class="emotion_name" id="result_emotion_name2"></p>
+      <p class="emoji" id="update_emoji2"></p>
+
+    </div>
+    <center>
+
+
+      
+
+      <br><br><div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Webcam View - </label>
+        <div id="camera">
+
+          
+          <br>
+          
+        </div>
+        <button onclick="take_snapshot()" class="btn btn-warning">Capture Image</button>
+        
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <label>Snapshot-</label>
+          <div id="result"></div>
+          
+        </div>
+        <button onclick="check();" class="btn btn-success">Predict gesture</button>
+
+
+        
+
+
+      </div>
+      
+      <br>
+
+      
+      </center>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
